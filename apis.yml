@@ -1,7 +1,25 @@
 aid: folia-water
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/folia-water.png
 name: Folia Water
-description: Folia Water is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Folia Water, Inc. is a clean-water social enterprise founded in 2016 by Jonathan Levine, Theresa
+  Dankovich, and Cantwell Carson with the goal of bringing safe drinking water to 100 million people
+  for pennies a day. The company manufactures Folia Filters, an affordable antimicrobial filter paper
+  embedded with silver nanoparticles that kills 99.9999% of bacteria and 99.7% of viruses while
+  removing protozoa and iron. Folia Water sells through distribution partners in emerging markets such
+  as Bangladesh and is backed by 500 Global. It is a physical consumer-products manufacturer with no
+  public developer platform, API, or SDK surface as of this profile.
 url: https://raw.githubusercontent.com/api-evangelist/folia-water/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Water
+- Water Filtration
+- Clean Technology
+- Nanotechnology
+- Consumer Products
+- Social Impact
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/folia-water-domain-security.yml
 - type: Website
   url: https://foliawater.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
